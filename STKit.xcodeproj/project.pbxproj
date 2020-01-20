@@ -14,8 +14,8 @@
 /* Begin PBXFileReference section */
 		0100468523D1AB5900C5FD82 /* STKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = STKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0100468823D1AB5900C5FD82 /* STKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = STKit.h; sourceTree = "<group>"; };
-		0100468923D1AB5900C5FD82 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0138607D23D2D29E00BE8ABF /* STKitApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = STKitApp.swift; sourceTree = "<group>"; };
+		01D481D223D590DD00041A3B /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,11 +48,27 @@
 		0100468723D1AB5900C5FD82 /* STKit */ = {
 			isa = PBXGroup;
 			children = (
-				0100468823D1AB5900C5FD82 /* STKit.h */,
-				0100468923D1AB5900C5FD82 /* Info.plist */,
-				0138607D23D2D29E00BE8ABF /* STKitApp.swift */,
+				01CEE5BF23D591CA000A9660 /* Supporting Files */,
+				01CEE5BE23D591BF000A9660 /* Sources */,
 			);
 			path = STKit;
+			sourceTree = "<group>";
+		};
+		01CEE5BE23D591BF000A9660 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				0100468823D1AB5900C5FD82 /* STKit.h */,
+				0138607D23D2D29E00BE8ABF /* STKitApp.swift */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		01CEE5BF23D591CA000A9660 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				01D481D223D590DD00041A3B /* Info.plist */,
+			);
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -272,7 +288,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = STKit/Info.plist;
+				INFOPLIST_FILE = "STKit/Supporting Files/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -298,7 +314,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = STKit/Info.plist;
+				INFOPLIST_FILE = "STKit/Supporting Files/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

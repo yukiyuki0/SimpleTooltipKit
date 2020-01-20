@@ -7,11 +7,10 @@ A simple ui framework. Written in Swift
 import UIKit
 import STKit
 
-
 final class ViewController: UIViewController {
 
     var tooltip: STView = STView()
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         let stkit = STKit(view: self.view)
@@ -22,7 +21,6 @@ final class ViewController: UIViewController {
     @IBAction func animateButtonDidTap(_ sender: Any) {
         self.tooltip.animate(duration: 2.0, delay: 1.0, hideDuration: 1.0)
     }
-    
 }
 ```
 

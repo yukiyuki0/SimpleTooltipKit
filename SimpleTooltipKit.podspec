@@ -15,8 +15,8 @@ Pod::Spec.new do |spec|
   #  summary should be tweet-length, and the description more in depth.
   #
 
-  spec.name         = "STKit"
-  spec.version      = "0.1.0"
+  spec.name         = "SimpleTooltipKit"
+  spec.version      = "0.1.1"
   spec.summary      = "A simple ui framework for easy to show the tooltip."
 
   # This description is used to generate tags and improve search results.

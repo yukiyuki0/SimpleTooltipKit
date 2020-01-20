@@ -1,3 +1,4 @@
+[![Build Status](https://travis-ci.org/yukiyuki0/SimpleTooltipKit.svg?branch=master)](https://travis-ci.org/yukiyuki0/SimpleTooltipKit)
 # SimpleTooltipKit
 A simple ui framework. Written in Swift
 

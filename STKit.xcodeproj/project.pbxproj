@@ -1,4 +1,4 @@
-// !$*UTF8*$!
+ // !$*UTF8*$!
 {
 	archiveVersion = 1;
 	classes = {
@@ -9,12 +9,14 @@
 /* Begin PBXBuildFile section */
 		0100468A23D1AB5900C5FD82 /* STKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 0100468823D1AB5900C5FD82 /* STKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0138607E23D2D29E00BE8ABF /* STKitApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0138607D23D2D29E00BE8ABF /* STKitApp.swift */; };
+		01801F6823D6EF0F00ECAD21 /* STView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01801F6723D6EF0F00ECAD21 /* STView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0100468523D1AB5900C5FD82 /* STKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = STKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0100468823D1AB5900C5FD82 /* STKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = STKit.h; sourceTree = "<group>"; };
 		0138607D23D2D29E00BE8ABF /* STKitApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = STKitApp.swift; sourceTree = "<group>"; };
+		01801F6723D6EF0F00ECAD21 /* STView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = STView.swift; sourceTree = "<group>"; };
 		01D481D223D590DD00041A3B /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -54,9 +56,18 @@
 			path = STKit;
 			sourceTree = "<group>";
 		};
+		01801F6623D6E80E00ECAD21 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				01801F6723D6EF0F00ECAD21 /* STView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		01CEE5BE23D591BF000A9660 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				01801F6623D6E80E00ECAD21 /* Views */,
 				0100468823D1AB5900C5FD82 /* STKit.h */,
 				0138607D23D2D29E00BE8ABF /* STKitApp.swift */,
 			);
@@ -151,6 +162,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				01801F6823D6EF0F00ECAD21 /* STView.swift in Sources */,
 				0138607E23D2D29E00BE8ABF /* STKitApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

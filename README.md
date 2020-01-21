@@ -14,8 +14,13 @@ final class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         let stkit = STKit(view: self.view)
-        stkit.setTooltipSize(size: 40)
-        self.tooltip = stkit.createTooltip(textString: "This is a simple tooltip example.")
+        self.tooltip = stkit.createTooltip() // Create a instance of tooltip
+        self.tooltip.size = 40 // Set height of tooltip
+        self.tooltip.textColor = UIColor.black // Set text color of label
+        self.tooltip.backgroundColor = UIColor.red // Set background color of tooltip
+        self.tooltip.textSize = 40 // Set text size of label
+        self.tooltip.textString = "Hello, World" // Set text string of label
+        self.view.addSubview(self.tooltip) // Add tooltip into subview
     }
 
     @IBAction func animateButtonDidTap(_ sender: Any) {

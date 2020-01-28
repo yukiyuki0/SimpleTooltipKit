@@ -11,6 +11,9 @@ import UIKit
 public class STView: UIView {
     public var size: CGFloat = 40
     private var maxY: CGFloat = 0
+    private var maxX: CGFloat = 0
+    private var posY: CGFloat = 0
+    
     fileprivate var isAnimate: Bool = false
     
     public var textString: String = "" {
@@ -34,11 +37,30 @@ public class STView: UIView {
     override init(frame: CGRect) {
         super.init(frame: frame)
         self.maxY = self.frame.maxY
+        self.maxX = self.frame.maxX
+        self.posY = self.maxY
+    
         self.setupLabel()
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(rotated), name: UIDevice.orientationDidChangeNotification, object: nil)
+    }
+    
+    deinit {
+       NotificationCenter.default.removeObserver(self, name: UIDevice.orientationDidChangeNotification, object: nil)
     }
 
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
+    }
+    
+    @objc func rotated() {
+        if UIDevice.current.orientation.isLandscape {
+            self.maxY = self.frame.maxX
+            self.frame = CGRect(x: 0, y: self.maxY, width: self.posY, height: self.frame.height)
+        } else {
+            self.maxY = self.posY
+            self.frame = CGRect(x: 0, y: self.maxY, width: self.maxX, height: self.frame.height)
+        }
     }
     
 }

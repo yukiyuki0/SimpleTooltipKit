@@ -74,3 +74,4 @@ final class ViewController: UIViewController {
 
 ## Demo
 ![Jan-19-2020 19-03-48](https://user-images.githubusercontent.com/11539551/72679090-2fb1d600-3aef-11ea-839a-b16695240a70.gif)
+![Jan-29-2020 17-28-21](https://user-images.githubusercontent.com/11539551/73339795-d569ff80-42bc-11ea-95c0-b918cfe8a624.gif)
